@@ -42,6 +42,7 @@ public class ServiceEmpleados {
 			return true;
 			
 			
+			
 			/* OPCIÓN 2
 				//Ejecutar consulta con objeto Statement. Ejecuta una instrucción sql
 				String sql="insert into empleados (nombre,email,departamento,salario) "; //dejar espacio en blanco
