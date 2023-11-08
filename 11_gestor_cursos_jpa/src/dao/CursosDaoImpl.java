@@ -118,8 +118,8 @@ public class CursosDaoImpl implements CursosDao {
 
 			return getEntityManager()
 					.createQuery(jpql, Curso.class)
-					.setParameter(1, Date.from(fechainicio.atStartOfDay(ZoneId.systemDefault()).toInstant()),TemporalType.DATE)
-					.setParameter(2, Date.from(fechafin.atStartOfDay(ZoneId.systemDefault()).toInstant()),TemporalType.DATE)
+					.setParameter(1, fechainicio)
+					.setParameter(2, fechafin)
 					.getResultList();
 			
 			
